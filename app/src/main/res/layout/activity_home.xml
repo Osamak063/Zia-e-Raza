@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fab_material_white"
+    tools:context="com.example.osamakhalid.zia_e_raza.ui.activities.HomeActivity">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_weight="5" />
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:scrollbars="vertical"
+        android:text="نام ونسب:اسم گرامی:مفتی محمدمنظوراحمد فیضی۔القاب:بیہقیِ وقت،مناظرِاعظم،شیخ القرآن،شیخ الحدیث وغیرہ۔سلسلۂِ نسب اسطرح ہے:بیہقیِ وقت علامہ مفتی منظور احمدفیضی بن علامہ محمد ظریف فیضی بن علامہ الٰہی بخش قادری بن حاجی پیر بخش رحمھم اللہ تعالیٰ ۔آپ ایک علمی خاندان کےچشم وچراغ تھے۔مولانامحمدظریف فیضی علیہ الرحمہ اپنےوقت کےجیدعالم اورقبلہ شاہجمالی کریم کےمنظورِ نظرخلیفہ تھے۔جدامجدعلامہ الہی بخش قادری علیہ الرحمہ عالم وعارف،اورصاحبِ تقویٰ بزرگ تھے۔"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cover"
+        app:layout_constraintVertical_bias="0.0"
+        app:trimCollapsedText="@string/read_more"
+        app:trimExpandedText="@string/read_less"
+        app:trimLength="40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.164">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/fab_material_green_500"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Languages"
+            android:textColor="@color/fab_material_white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/urdu"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/fab_material_green_500"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Urdu"
+            android:textColor="@color/fab_material_white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eng"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/fab_material_green_500"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="English"
+            android:textColor="@color/fab_material_white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
